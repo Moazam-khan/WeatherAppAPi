@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "./Header";
 
 import { Layout } from "antd";
 
@@ -10,10 +11,10 @@ interface Props {
 
 const AppLayout = ({ children }: Props) => {
   return (
-    <Layout style={{ backgroundColor: "#181819" }}>
-<h1>Header</h1>
+    <Layout style={{width:'100%', height:'100vh',background:'linear-gradient(to right, #4c6ef5, #9b4dca, #f72585)'}}>
+<Header ></Header>
       <Content style={{}}>{children}</Content>
-      <h1>Footer</h1>
+
     </Layout>
   );
 };
